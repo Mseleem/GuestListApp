@@ -28,7 +28,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="card">
-            <div class="card-header">
+            <div class="card-header" v-bind:class="formSubmitClass">
               {{event.eventDate}}
             </div>
             <div class="card-block">
@@ -38,7 +38,7 @@
 
               <form class="form-inline" v-on:submit.prevent="formSumbitted">
                 <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
-                <input type="submit" class="btn btn-primary"></input>
+                <input type="submit" class="btn btn-primary" v-bind:class="formSubmitClass"></input>
               </form>
               {{ newNameText }}
             </div>

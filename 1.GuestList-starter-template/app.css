@@ -7,3 +7,8 @@
   margin: 10px;
   display: inline-block;
 }
+
+
+.submitted {
+  background-color:#5cb85c;
+}
