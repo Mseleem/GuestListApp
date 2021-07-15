@@ -50,22 +50,21 @@
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-              Attending ()
+              Attending ({{guestName.length}})
             </div>
             <div class="card-block">
-              <div>
-                <div class="card-success rounded name-box">
-
+              <div v-if="guestName.length > 0">
+                <div class="card-success rounded name-box" v-for="guest in guestName">{{guest}}
                 </div>
               </div>
-              <div>
-                <ul>
-                  <li v-for="guest in guestName">{{guest}}</li>
-                </ul>
+              <div v-else>
+                <h4>no names added yet...</h4>
               </div>
+              
             </div>
+            
+            
           </div>
-
         </div>
       </div>
     </div>

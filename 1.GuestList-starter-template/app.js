@@ -12,8 +12,11 @@ new  Vue ({
     },
     methods: {
         formSumbitted: function() {
-            this.guestName.push(this.newNameText)
+            if(this.newNameText.length > 0) {
+                this.guestName.push(this.newNameText)
             this.newNameText = ''
+            }
+            
         }
     }
     
