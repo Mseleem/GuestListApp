@@ -11,7 +11,6 @@ new  Vue ({
         formSubmitClass: "",
         appStyles: {    
             marginTop: "25px",
-            color: "red",
         }
         
     },
