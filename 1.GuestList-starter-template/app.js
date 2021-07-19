@@ -8,21 +8,21 @@ new  Vue ({
             eventDetails: "Add your name to the guest list for <em>exclusive</em> offers:",
         },
         newNameText: '',
-        guestName: ['Adam', 'Mathew', 'John'],
+        guestName: [],
         formSubmitClass: "",
         appStyles: {    
             marginTop: "25px",
-        }
+        eventCapacityPercentage: 0 //length of the progress bar converted into the width, binded to the sytle
         
     },
     methods: {
         formSumbitted: function() {
-            if(this.newNameText.length > 0) {
+            if(this.newNameText.length > 0 && this.eventCapacityPercentage < 100) {
                 this.guestName.push(this.newNameText)
                 this.newNameText = ''
                 this.formSubmitClass = "submitted"
+                this.eventCapacityPercentage = (this.guestName.length/this.eventCapacity)*100   
             }
-            
         }
     }
     
