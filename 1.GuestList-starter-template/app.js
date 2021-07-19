@@ -12,6 +12,8 @@ new  Vue ({
         formSubmitClass: "",
         appStyles: {    
             marginTop: "25px",
+        },
+        eventCapacity : 25, 
         eventCapacityPercentage: 0 //length of the progress bar converted into the width, binded to the sytle
         
     },
