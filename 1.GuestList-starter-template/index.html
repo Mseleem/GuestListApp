@@ -54,7 +54,7 @@
             </div>
             <div class="card-block">
               <div v-if="guestName.length > 0">
-                <div class="card-success rounded name-box" v-for="guest in guestName">{{guest}}
+                <div class="card-success rounded name-box" v-for="guest in guestName">{{guest.toLowerCase()}}
                 </div>
               </div>
               <div v-else>

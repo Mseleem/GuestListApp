@@ -8,7 +8,7 @@ new  Vue ({
             eventDetails: "Add your name to the guest list for <em>exclusive</em> offers:",
         },
         newNameText: '',
-        guestName: [],
+        guestName: ['Adam', 'Mathew', 'John'],
         formSubmitClass: "",
         appStyles: {    
             marginTop: "25px",
