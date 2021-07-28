@@ -26,6 +26,11 @@ new  Vue ({
                 this.eventCapacityPercentage = (this.guestName.length/this.eventCapacity)*100   
             }
         }
+    },
+    computed: {
+        sortName: function() {
+            return this.guestName.sort()
+        }
     }
     
 });

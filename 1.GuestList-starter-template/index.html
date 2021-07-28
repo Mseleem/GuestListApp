@@ -40,7 +40,7 @@
                 <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
                 <input type="submit" class="btn btn-primary" v-bind:class="formSubmitClass"></input>
               </form>
-              {{ newNameText }}
+              {{newNameText}}
             </div>
           </div>
         </div>
@@ -50,13 +50,13 @@
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-              Attending ({{guestName.length}})
+              Attending ({{guestName.length}}/{{eventCapacity}})
               <br>
               <progress value="100" v-bind:style="{width:eventCapacityPercentage + '%'}"></progress>
             </div>
             <div class="card-block">
               <div v-if="guestName.length > 0">
-                <div class="card-success rounded name-box" v-for="guest in guestName">{{guest.toLowerCase()}}
+                <div class="card-success rounded name-box" v-for="guest in sortName">{{guest.toLowerCase()}}
                 </div>
               </div>
               <div v-else>
