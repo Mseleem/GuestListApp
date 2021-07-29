@@ -25,6 +25,9 @@ new  Vue ({
                 this.formSubmitClass = "submitted"
                 this.eventCapacityPercentage = (this.guestName.length/this.eventCapacity)*100   
             }
+        },
+        keyPressed: function() {
+            console.log("a key was pressed")
         }
     },
     computed: {

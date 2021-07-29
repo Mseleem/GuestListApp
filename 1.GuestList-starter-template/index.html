@@ -37,7 +37,7 @@
               <p class="card-text" v-html="event.eventDetails"></p>
 
               <form class="form-inline" v-on:submit.prevent="formSumbitted">
-                <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
+                <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter your name" v-model="newNameText" @keyup.esc="keyPressed">
                 <input type="submit" class="btn btn-primary" v-bind:class="formSubmitClass"></input>
               </form>
               {{newNameText}}
