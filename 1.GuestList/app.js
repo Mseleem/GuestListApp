@@ -22,7 +22,7 @@ new  Vue ({
             if(this.newNameText.length > 0 && this.eventCapacityPercentage < 100) {
                 this.guestName.push(this.newNameText)
                 this.newNameText = ''
-                this.formSubmitClass = "submitted"
+                // this.formSubmitClass = "submitted"
                 this.eventCapacityPercentage = (this.guestName.length/this.eventCapacity)*100   
             }
         },
